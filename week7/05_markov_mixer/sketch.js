@@ -33,14 +33,14 @@ function setup() {
   // We could regenerate as the user moves the slider!
   // but unless it's very little data, we'd have to do it 
   // a different way
-  // slider.input(tooSlow);
+  slider.input(tooSlow);
 
   noCanvas();
 }
 
-// function tooSlow() {
-//   generate();
-// }
+function tooSlow() {
+  generate();
+}
 
 function generate() {
   // Make the markov generator each time we generate text!
